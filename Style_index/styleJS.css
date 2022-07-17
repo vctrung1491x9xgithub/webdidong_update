@@ -1,0 +1,55 @@
+/* POPUP account */
+
+/* ---------------- */
+.changePOS {
+	top: 0 !important;
+	transition: 1s;
+}
+/* -----------MENU--------- */
+.pos-fixed-menu {
+    position: fixed;
+    top: 150px; 
+    left: 0;
+    z-index: 50;
+    width: auto !important;
+    margin-top: -30px !important; 
+    flex-direction: column;
+    align-items: flex-start !important;
+    background: transparent !important;
+    box-shadow: none !important; 
+    -webkit-animation: fadeIn 500ms;
+	-moz-animation: fadeIn 500ms;
+	-o-animation: fadeIn 500ms;
+	animation: fadeIn 500ms;
+	animation-timing-function: linear;
+}
+.pos-fixed-menu a {
+    width: 48px !important;
+    padding: 10px !important;
+    justify-content: left !important;
+    overflow: hidden;
+}
+.pos-fixed-menu a {
+    border-right: 4px solid tomato;
+}
+
+.pos-fixed-menu span {
+    font-size: 25px !important;
+    margin-right: 15px;
+}
+.pos-fixed-menu p {
+    white-space: nowrap;  
+}
+.pos-fixed-menu a:hover { 
+    transition: all .5s;
+    width: auto !important; 
+}
+
+@keyframes fadeIn {
+    0% { 
+        left: -50px;
+ }
+     100% {
+        left: 0px;
+     }
+ }

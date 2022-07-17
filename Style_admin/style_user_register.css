@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #9053c7;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: fixed linear-gradient(to right bottom, #c850c0, #4158d0); 
+    font-family: 'Varela Round', sans-serif; 
+    text-shadow: 0 0 2px #d3d1d1;
+    font-size: 16px;
+}
+input {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+.container .content, 
+.form-container form, .content .pass, .login_with {
+     display: flex;
+ }
+.container .content, .form-container form{
+    justify-content: space-between;
+    padding-top: 10px;
+}
+ 
+.container {
+    width: 100%;
+    max-width: 750px;
+    margin: 50px auto;  
+    padding: 0 20px; 
+}
+.container .main {
+    padding-top: 30px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.993);
+    box-shadow: 0 2px 3px rgb(7 34 121 / 17%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%);
+}
+.container .title {
+    text-align: center;
+    color: #e5304a;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 3px rgb(7 34 121 / 17%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%);
+}
+.container .title h1 {
+    display: inline-block;
+    font-weight: 600; 
+    font-family: Bungee,Arial,sans-serif; 
+}
+.container .title p {
+    font-size: 1em;
+    font-weight: 100;
+    margin-top: 10px; 
+}
+.container .content {
+    flex-direction: column;
+    border-radius: 7px;
+}
+
+.form-container form {
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+.content .input-box  {
+    margin: 0 auto;
+}
+.content .input-box input {
+    min-width: 300px;
+    padding: 10px 10px;
+    color: #B33771;
+    font-size: 16px;
+    margin: 10px 0 20px 0;
+    box-shadow: 0 2px 3px rgb(7 34 121 / 17%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%);
+}
+.content .input-box input::placeholder { 
+    font-style: italic;
+    font-size: 12px;
+}
+.content .input-box input:focus { 
+    box-shadow: 0 1px 3px rgb(7, 194, 116), 
+	inset 0 1px 1px rgb(255 255 255 / 50%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%);
+}
+.content .input-box label {
+    font-weight: 600;
+    padding: 2px 5px;
+    color: #111111;   
+    display: block;
+}
+  
+.content input[type="submit"]
+{
+    background: rgb(7, 189, 107);
+    width: 50%;
+    font-size: 16px;
+    padding: 10px 0;
+    margin: 20px auto;
+    color: #fff;
+    box-shadow: 0 2px 3px rgb(7 34 121 / 17%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%);
+}
+.content input:hover[type="submit"]
+{
+    background: rgb(66, 226, 119);
+}
+.content .pass , .content .login_with {
+    justify-content: center;
+}
+.pass .pass-forget, .pass .register {
+    font-size: 15px;
+    color: #fff;   
+    padding: 5px;
+    background-color: tomato;
+    border-radius: 20px;
+    width: 150px;
+    margin: 0px 20px;
+    text-align: center;
+    box-shadow: 0 2px 3px rgb(7 34 121 / 17%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%);
+}
+.pass .pass-forget:hover {
+    background: #fff;   
+    padding: 5px;color: tomato;
+    transition: .5s all;
+    font-weight: 600;
+}
+.pass .register {
+    background: #B33771;
+}
+.pass .register:hover {
+    color: #B33771;
+    background: #fff;  
+    transition: .5s all;
+    font-weight: 600; 
+}
+.login_with .box {
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden; 
+	box-shadow: 0 1px 3px rgb(7 34 121 / 30%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%), 
+	inset 0 1px 1px rgb(255 255 255 / 50%);
+}
+.login_with .box:hover {
+   transform: scale(1.3);
+   transition: .5s all;
+}
+.login_with .box-fb {
+    background: url(../images/icon_fb.png) center no-repeat;
+}
+.login_with .box-gg {
+    background: url(../images/icon_gg.png) center no-repeat;
+}
+.login_with .box-zalo {
+    background: url(../images/icon_zalo.png) center no-repeat; 
+}
+.login_with .box-fb, .login_with .box-fb, 
+.login_with .box-gg, .login_with .box-zalo {
+    width: 40px;
+    height: 40px;
+    background-size: 90%;
+    background-color: #fff;
+}

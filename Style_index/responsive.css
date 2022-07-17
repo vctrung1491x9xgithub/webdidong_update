@@ -1,0 +1,534 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*Ipad ngang(1024 x 768)*/
+.rowfoot1-rp {
+	width: 100%;
+	display: none;
+}
+.rowfoot1-rp .colfoot-rp a{
+	display: block;
+	line-height: 2;
+	font-weight: 600;
+}
+
+.user-icon-container, .icon-search-container{
+	height: 100%;
+	display: none;
+	margin: 0 10px;
+}
+.icon-user, .icon-search {
+	font-size: 25px;
+	color: #24DC83;
+	
+}
+/*---------------USER_MENU--------------*/
+
+.user-menu-responsive {
+    width: 0px;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+    z-index: 10;
+}
+.user-menu-responsive.clicked {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.541);
+    transition: all 0.5s;
+}
+.user-menu-responsive .module {
+	width: 300px;
+	background: #fff;
+}
+.clickX {
+	padding: 6px 0px 5px 0px;
+	margin-left: 260px;
+	font-size: 25px;
+}
+.user-menu-responsive .top-menu {
+	background-color: #eee;
+	border-left: none;
+	border-right: none;
+	display: flex;
+	align-items: center;
+}
+.top-menu .user-icon {
+    font-size: 30px;
+    padding: 10px 40px;
+    border-right: 2px solid #fff;
+}
+.top-menu span {
+    padding-left: 40px;
+	font-weight: 600;
+}
+.user-menu-responsive .bottom-menu {
+	margin-top: 10px;
+	height: 100vh;
+}
+.bottom-menu .material-icons {
+	vertical-align: middle;
+	margin: 0 20px;
+}
+.bottom-menu ul {
+	width: 280px;
+	margin: auto;
+}
+.bottom-menu ul li {
+	border-bottom: 1px solid #eee;
+	padding: 5px;
+}
+.bottom-menu ul li:hover  {
+	background-color: whitesmoke;
+}
+.bottom-menu ul li:hover a {
+	transform: scale(1.2);
+	transition: all .3s;
+}
+.bottom-menu a {
+	padding: 7px;
+	display: block;
+}
+
+/*---------SEARCH-RP-----------*/
+.search-responsive {
+	position: fixed;
+	top: 70px;
+	left: 0;
+	width: 100%;
+	padding: 5px;
+	background-color: #ccc;
+	display: none;
+}
+.search-responsive.search-responsive-show  {
+	display: block;
+}
+.search-responsive input {
+	width: 85%;
+	outline: none;
+	border: 1px solid #24dc83;
+	padding: 5px 10px;
+}
+.search-responsive button {
+	width: 13%;
+	padding: 5px 0;
+	outline: none;
+	border: none;
+	font-weight: 600;
+	background: #24DC83;
+	color: #fff;
+}
+.slideShow-responsive-mobile {
+	display: none;
+}
+.container-responsive > .homeproduct li:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)) {
+	display: none;
+}
+@media screen and (max-width: 1023px){
+	 body {
+        background-color: pink;
+    }
+/*-----HEADER-------------*/
+	
+/*-----HEADER----END-------*/
+/*-----MENU----------------*/
+	#containt .menu { 
+		justify-content: flex-start;
+	}
+/*-----MENU------END-------*/
+/*-----FIRST-CONTAINT------*/
+	#banner-container {
+		height: 300px;
+	}
+	#mySlidesShow .item img {
+	  	min-height: 250px;
+	}
+	.banner-left-bottom .nav-left-bottom .list-item a  {
+		padding: 0 5px;
+		font-size: 11px;
+	}
+	.banner-right-top .news .news-items {
+		height: 60px;
+	}
+	.banner-news .label-news {
+	    padding: 3px 15px 0 5px;
+	    line-height: 15px;
+	}
+	.banner-news .label-news:after {
+	    border-right: 13px solid #fff;
+	    border-top: 17px solid transparent;
+	    border-bottom: 17px solid transparent;
+	}
+
+/*-----FIRST-CONTAINT---END---*/
+/*---------SECON-CONTAINT---------*/
+	#panel-container .show-sp {
+		margin-top: -20px;
+	}
+	
+	#panel-container .label-text  {
+		height: 35px;
+		line-height: 40px;
+		font-size: 20px;
+	}
+	#panel-container .label-text:after {
+		left: -17px;
+	    border-right: 15px solid #E5304A;
+	    border-top: 17px solid transparent;
+	    border-bottom: 18px solid transparent;   
+	}
+	#panel-container .label-text:before {
+		right: -17px;
+	    border-left: 15px solid #E5304A;
+	    border-top: 17px solid transparent;
+	    border-bottom: 18px solid transparent;   
+	}
+	/*------PRODUCT----------*/
+	.img img {
+	    max-width: 160px;
+	    padding: 0px ;
+	}
+/*---------PRODUCT------------END-----*/
+/*------------PROMO---------*/
+	.name-sp {
+        font-size: 14px;
+    }
+/*---------PROMO--------------END------*/ 
+/*---------SECOND-CONTAINT----END-----*/
+/*---------THIRD-CONTAINT---------*/
+	#phone-container .navigat span, .navigat span {
+	    font-size: 14px;
+	}
+	#phone-container .navigat ul li, .navigat ul li {
+		font-size: 13px;
+	}
+/*---------THIRD-CONTAINT----END-----*/
+}
+@media screen and (max-width: 950px){
+	body {
+		background-color: red;
+	}
+ /*-----HEADER-------------*/
+	.header .sidebar .right .account .register {
+		display: none;
+	}
+/*-----HEADER----END-------*/
+/*-----MENU----------------*/
+/*-----MENU------END-------*/
+/*-----FIRST-CONTAINT------*/
+	#banner-container {
+		display: none;
+	}
+	.slideShow-responsive-mobile .owl-carousel {
+		position: relative;
+		margin-top: 10px;
+	}
+	.slideShow-responsive-mobile {
+		display: block;
+		width: 100%;
+	}
+	.slideShow-responsive-mobile .owl-carousel .owl-dots{
+		position: absolute;
+		bottom: 0;
+		left: 25%;
+		width: 50%;
+		z-index: 100;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+/*-----FIRST-CONTAINT---END---*/
+/*---------SECON-CONTAINT---------*/
+	#panel-container .owl-theme .owl-nav, #seven-containt .owl-theme .owl-nav {
+	  	display: none;
+	}	
+/*---------SECOND-CONTAINT----END-----*/
+/*---------THIRD-CONTAINT--FIVE-CONTAINT--SIX_CONTAINT---------*/
+	#phone-container .navigat span, .navigat span {
+	    font-size: 14px;
+	}
+	#phone-container .navigat ul li, .navigat ul li {
+		font-size: 12px;
+	}
+	#phone-container .navigat ul li:nth-child(4), 
+	#laptop-container .navigat ul li:nth-child(4),
+	#tablet-container .navigat ul li:nth-child(4),
+	#seven-containt .navigat ul li:nth-child(4) {
+		display: none;
+	}
+	
+	#phone-container .homeproduct .list .feature,
+	#laptop-container .homeproduct .list .feature,
+	#tablet-container .homeproduct .list .feature {
+		width: 50%;
+	}
+	#phone-container .homeproduct .list .main-product,
+	#laptop-container .homeproduct .list .main-product,
+	#tablet-container .homeproduct .list .main-product {
+		width: 25%;	
+	}
+	/* #phone-container .homeproduct .list .pd-5-rp,
+	#phone-container .homeproduct .list .pd-10-rp {
+		display: block;
+	} */
+/*---------FIVE-SIX-CONTAINT-------*/
+.container-responsive .homeproduct li:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
+	display: none;
+}
+/*---------THIRD-CONTAINT----END-----*/
+    /*------PRODUCT----------*/
+	.img  img {
+	    max-width: 200px;
+	    padding: 0px 10px;
+	}
+	#tablet-container .img img {
+	    padding: 0px 15px !important;
+	}
+	/* #laptop-container .homeproduct .list .img-container .img {
+	 	border: 1px solid transparent;
+	} */
+
+/*------------DISCOUNT---------*/
+
+/*---------DISCOUNT-----------END------*/  
+/*---------PRODUCT------------END-----*/
+}
+    
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 767px){
+    /*-----HEADER-------------*/
+	body {
+		background-color: yellow;
+	}
+	#containt {
+		padding-top: 70px;
+	}
+    #contact-header-container {
+    	display: none;
+    }
+    #header-container {
+    	top: 0 !important;
+    	transition: 0s !important;
+    }
+	.header .sidebar .basket .my-basket {
+		margin-right: 10px;
+	}
+	.my-basket .ten_gio_hang {
+		display: none;
+	}
+/*-----HEADER----END-------*/
+/*-----MENU----------------*/
+	#containt .menu {
+		display: none;
+	}
+/*-----MENU------END-------*/
+/*-----FIRST-CONTAINT------*/
+/*-----FIRST-CONTAINT---END---*/
+	#containt #panel-container {
+		margin-top: 10px;
+	}
+/*---------SECON-CONTAINT---------*/
+	#panel-container .show-sp {
+		margin-top: -16px;
+	}
+	/* #panel-container .label-text {
+		height: 30px;
+		line-height: 30px;
+}
+	#panel-container .label-text:after {
+	    border-right: 15px solid #24DC83;
+	    border-top: 15px solid transparent;
+	    border-bottom: 15px solid transparent;   
+	}
+	#panel-container .label-text:before {
+	    border-left: 15px solid #24DC83;
+	    border-top: 15px solid transparent;
+	    border-bottom: 15px solid transparent;
+	} */
+/*---------SECOND-CONTAINT----END-----*/
+/*---------THIRD-CONTAINT--FIVE-CONTAINT--SIX_CONTAINT---------*/
+
+
+	#phone-container .navigat ul li:nth-child(3), 
+	#laptop-container .navigat ul li:nth-child(3),
+	#tablet-container .navigat ul li:nth-child(3),
+	#seven-containt .navigat ul li:nth-child(3) {
+		display: none;
+	}
+	#phone-container .homeproduct .list .feature,
+	#laptop-container .homeproduct .list .feature,
+	#tablet-container .homeproduct .list .feature {
+		width: 66.67%;
+	}
+	#phone-container .homeproduct .list .main-product,
+	#laptop-container .homeproduct .list .main-product,
+	#tablet-container .homeproduct .list .main-product {
+		width: 33.33%;	
+	}
+
+/*---------FIVE-SIX-CONTAINT-------*/
+.container-responsive .homeproduct li:nth-child(4), #laptop-container .homeproduct li:nth-child(5) {
+	display: block !important;
+}
+/*---------THIRD-CONTAINT----END-----*/
+/*----------FOOTER--------*/ 
+	#container #footer .rowfoot1 .colfoot {
+		display: none;
+	}
+	.rowfoot1-rp {
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+/*-------FOOTER---END------*/ 
+
+@media screen and (max-width: 600px){
+    /*-----HEADER-------------*/
+	body {
+		background-color: green;
+	}
+	.center, .right {
+		display: none;
+	}
+	.sidebar .left  {
+		margin: 0 auto;
+	}
+	.header .sidebar .basket .my-basket {
+		padding: 0 15px 0 5px;	
+		height: 30px;
+		font-size: 11px;
+	}
+/*-----FIRST-CONTAINT------*/
+/*-----FIRST-CONTAINT---END---*/
+/*---------SECON-CONTAINT---------*/
+/*---------SECOND-CONTAINT----END-----*/
+/*---------THIRD-CONTAINT--FIVE-CONTAINT--SIX_CONTAINT---------*/
+	#phone-container .navigat ul li, 
+	#laptop-container .navigat ul li,
+	#tablet-container .navigat ul li,
+	#seven-containt .navigat ul li {
+		display: none;
+	}
+	.navigat ul li:last-child {
+		display: inline-block !important;
+	}
+	#phone-container .homeproduct .list .feature,
+	#laptop-container .homeproduct .list .feature,
+	#tablet-container .homeproduct .list .feature {
+		width: 100%;
+	}
+	#phone-container .homeproduct .list .main-product,
+	#laptop-container .homeproduct .list .main-product,
+	#tablet-container .homeproduct .list .main-product {
+		width: 50%;	
+	}
+	/* #phone-container .homeproduct .list .pd-4,
+	#phone-container .homeproduct .list .pd-5 {
+		display: block;
+	}
+	#phone-container .homeproduct .list .f-pd-5 {
+		display: none;
+	} */
+/*---------FIVE-SIX-CONTAINT-------*/
+	.container-responsive .homeproduct li {
+		display: block !important;
+	}
+	#laptop-container .img img {
+	    padding: 0 !important;
+	}
+/*---------FIVE-SIX-CONTAINT-------*/
+	.icon-search-container {
+		position: static;
+		display: flex;
+		align-items: center;
+		margin-right: 20px;
+	}
+	  /*---------------USER-------------*/
+	.user-menu-responsive {
+		display: block;
+	}
+	.user-icon-container {
+		display: flex;
+		align-items: center;
+	}
+/*---------THIRD-CONTAINT----END-----*/
+}
+
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 479px){
+	body {
+		background-color: #999;
+	}
+	.search-responsive {
+		position: fixed;
+		top: 50px;
+	}
+	#containt {
+	    padding-top: 50px;
+	}
+/*-----HEADER----------*/
+	#header-container .header {
+		height: 50px !important;
+	}
+	.sidebar .left .logo img {
+		width: 140px;
+		height: 40px;
+	}
+	#panel-container {
+		display: none !important;
+	}
+
+/*-----HEADER----END-------*/
+/*-----FIRST-CONTAINT------*/
+
+/*-----FIRST-CONTAINT---END---*/
+/*-----SECON-CONTAINT---------*/
+	
+/*-----PRODUCT----------*/
+/*-----DISCOUNT---------*/
+	.product label, .feature-label {
+        font-size: 9px;
+        height: 18px;
+        line-height: 17px;
+    }
+    .discount::before {
+        width: 18px;
+        height: 18px;
+        position: relative;
+        top: -1px;
+    } 
+/*---------DISCOUNT-----------END------*/  
+/*---------PRODUCT------------END-----*/
+/*------------PROMO---------*/
+	.name-sp {
+        font-size: 13px;
+    }
+    .price {
+        padding: 0 0 2px 0; 
+     }
+    .price strong {
+       font-size: 11px;
+    }
+    .price span {
+        font-size: 10px;
+     }
+    .endow {
+        font-size: 9px;
+    }
+/*---------PROMO--------------END------*/ 
+/*---------SECOND-CONTAINT----END-----*/
+/*---------SECOND-CONTAINT----END-----*/
+}
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 320px){
+    
+}
+/*Smart phone nhỏ*/
+@media screen and (max-width: 240px){
+    
+}

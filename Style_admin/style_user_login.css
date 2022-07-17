@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #9053c7;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: fixed linear-gradient(to right bottom, #c850c0, #4158d0); 
+    font-family: 'Varela Round', sans-serif;
+}
+input {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+.wraper {
+    max-width: 800px;
+    padding: 20px;
+    margin: 100px auto;
+}
+.wraper .title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.wraper .title h1 {
+    display: inline-block;
+    font-weight: 600;
+}
+.wraper .title p {
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+.wraper .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 2px solid #fff;  
+}
+.content .form-left {
+    width: 200px;
+    padding: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+
+}
+.form-left .avatar {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 120px;
+}
+.form-left .avatar img {
+    width: 200px;
+    margin: -5px 0 5px 0;
+    position: absolute;
+    left: 0;
+}
+.form-left .avatar iframe {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    width: 95%;
+    height: 100px;
+    z-index: -99999;
+}
+.content .form-right {
+    width: 550px;
+    padding: 10px 10px 10px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.form-right form {
+    width: 350px ;
+}
+.form-right .login_with {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login_with span {
+    margin: 0 20px;
+}
+.login_with .box {
+    margin: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.login_with .box:hover {
+   transform: scale(1.3);
+   transition: .5s all;
+}
+.login_with .box-fb {
+    background: url(../images/icon_fb.png) center no-repeat;
+}
+.login_with .box-gg {
+    background: url(../images/icon_gg.png) center no-repeat;
+}
+.login_with .box-zalo {
+    background: url(../images/icon_zalo.png) center no-repeat; 
+}
+.login_with .box-fb, .login_with .box-fb, 
+.login_with .box-gg, .login_with .box-zalo {
+    width: 40px;
+    height: 40px;
+    background-size: 90%;
+    background-color: #fff;
+}
+.content .input-box  {
+    position: relative;
+}
+.content .input-box input {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 16px;
+    margin-top: 35px;
+}
+.content .input-box label {
+    position: absolute;
+    top: 33px;
+    left: 20px;
+    padding: 10px 0;
+    color: rgb(92, 78, 78);
+    transition: .5s;
+    pointer-events: none;
+    word-spacing: 2px;
+}
+.content .input-box  input:focus ~ label, 
+.content .input-box  input:valid ~ label {
+    top: -5px;
+    left: 0;
+    color: redellow;
+    font-size: 18px;
+    font-weight: 600;
+    color:#fff;
+}
+.content input[type="submit"]
+{
+    background: rgb(7, 189, 107);
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0;
+    margin: 25px 0 15px 0;
+    color: #fff;
+}
+.content input:hover[type="submit"]
+{
+    background: rgb(66, 226, 119);
+}
+.content .form-right .pass {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.pass .pass-forget, .pass .register {
+    font-size: 15px;
+    color: #fff;   
+    padding: 5px;
+    background-color: tomato;
+    border-radius: 20px;
+    width: 150px;
+    margin: 0 auto;
+}
+.pass .pass-forget:hover {
+    background: #fff;   
+    padding: 5px;color: tomato;
+    transition: .5s all;
+    font-weight: 600;
+   
+}
+.pass .register {
+    background: #B33771;
+}
+.pass .register:hover {
+    color: #B33771;
+    background: #fff;  
+    transition: .5s all;
+    font-weight: 600; 
+}
+
+@media screen and (max-width: 768px){
+    .wraper .content {
+    }
+    .form-right .login_with {
+        flex-direction: column;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .login_with .box-content {
+        display: flex;
+        justify-content: space-around;
+    }
+    .content .form-right {
+        justify-content: center;
+    }
+    .login_with span {
+        margin: 0;
+    }
+}
